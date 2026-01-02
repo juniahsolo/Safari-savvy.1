@@ -29,14 +29,14 @@ export default function AboutPage() {
 
         <p className="text-lg leading-relaxed mb-6 text-gray-700">
           Our team consists of passionate travel experts and top-tier guides
-          who have spent years exploring Kenya’s parks, reserves, and hidden
+          who have spent years exploring Kenya&apos;s parks, reserves, and hidden
           gems. With deep local knowledge and a commitment to exceptional
           service, we ensure every guest enjoys a seamless, enjoyable, and
           immersive safari experience.
         </p>
 
         <p className="text-lg leading-relaxed text-gray-700">
-          Whether you're planning a family holiday, romantic escape, solo
+          Whether you&apos;re planning a family holiday, romantic escape, solo
           expedition, or photographic adventure, Safari Savvy Adventures is
           here to craft a trip that exceeds expectations.
         </p>

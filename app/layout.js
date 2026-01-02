@@ -1,4 +1,6 @@
 import "./globals.css";
+import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Safari Savy Adventures",
@@ -15,12 +17,12 @@ export default function RootLayout({ children }) {
           <h1 className="text-2xl font-bold">Safari Savy Adventures</h1>
 
           <nav className="space-x-6">
-            <a href="/" className="hover:text-yellow-400">Home</a>
-            <a href="/destinations" className="hover:text-yellow-400">Destinations</a>
-            <a href="/packages" className="hover:text-yellow-400">Tours</a>
-            <a href="/about" className="hover:text-yellow-400">About</a>
-            <a href="/blog" className="hover:text-yellow-400">Blog</a>
-            <a href="/contact" className="hover:text-yellow-400">Contact</a>
+            <Link href="/" className="hover:text-yellow-400">Home</Link>
+            <Link href="/destinations" className="hover:text-yellow-400">Destinations</Link>
+            <Link href="/packages" className="hover:text-yellow-400">Tours</Link>
+            <Link href="/about" className="hover:text-yellow-400">About</Link>
+            <Link href="/blog" className="hover:text-yellow-400">Blog</Link>
+            <Link href="/contact" className="hover:text-yellow-400">Contact</Link>
           </nav>
         </header>
 
@@ -87,10 +89,10 @@ export default function RootLayout({ children }) {
               </h3>
 
               <ul className="space-y-3 text-gray-300">
-                <li><a href="/" className="hover:text-yellow-500 transition">Home</a></li>
-                <li><a href="/destination/lake-nakuru" className="hover:text-yellow-500 transition">Destinations</a></li>
-                <li><a href="/tours/3-days-2-nights-masai-mara" className="hover:text-yellow-500 transition">Tours</a></li>
-                <li><a href="/about" className="hover:text-yellow-500 transition">About Us</a></li>
+                <li><Link href="/" className="hover:text-yellow-500 transition">Home</Link></li>
+                <li><Link href="/destination/lake-nakuru" className="hover:text-yellow-500 transition">Destinations</Link></li>
+                <li><Link href="/tours/3-days-2-nights-masai-mara" className="hover:text-yellow-500 transition">Tours</Link></li>
+                <li><Link href="/about" className="hover:text-yellow-500 transition">About Us</Link></li>
               </ul>
             </div>
 
@@ -110,7 +112,7 @@ export default function RootLayout({ children }) {
                 target="_blank"
                 className="flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white py-3 px-5 rounded-xl shadow-lg transition w-fit"
               >
-                <img src="/WhatsApp.jpg" alt="WhatsApp" className="h-6 w-6" />
+                <Image src="/WhatsApp.jpg" alt="WhatsApp" width={24} height={24} className="h-6 w-6" />
                 <span className="font-semibold">Chat on WhatsApp</span>
               </a>
             </div>
